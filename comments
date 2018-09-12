@@ -1,0 +1,4 @@
+in trainer.py:
+<<from tensorflow.summary import FileWriter
+>>from tensorboard import FileWriter
+
