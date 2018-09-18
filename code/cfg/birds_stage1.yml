@@ -3,7 +3,7 @@ CONFIG_NAME: 'stageI'
 
 DATASET_NAME: 'birds'
 EMBEDDING_TYPE: 'cnn-rnn'
-GPU_ID: '0,1'
+GPU_ID: '0'
 Z_DIM: 100
 DATA_DIR: '../data/birds'
 IMSIZE: 64

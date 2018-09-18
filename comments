@@ -1,4 +1,8 @@
 in trainer.py:
-<<from tensorflow.summary import FileWriter
 >>from tensorboard import FileWriter
+<<from tensorflow.summary import FileWriter
 
+
+in datasets.py
+>>self.bbox = self.load_bbox()
+<<self.bbox = None
