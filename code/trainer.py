@@ -240,9 +240,9 @@ class GANTrainer(object):
         netG.eval()
 
         # Load text embeddings generated from the encoder
-        t_file = torchfile.load(datapath)
-        captions_list = t_file.raw_txt
-        embeddings = np.concatenate(t_file.fea_txt, axis=0)
+        t_file = torch.load(datapath)
+        captions_list = t_file['raw_txt']
+        embeddings = np.concatenate(t_file['fea_txt'], axis=0)
         num_embeddings = len(captions_list)
         print('Successfully load sentences from: ', datapath)
         print('Total number of sentences:', num_embeddings)
